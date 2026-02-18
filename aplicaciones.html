@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aplicaciones industriales — FLYHIGH</title>
+  <meta name="description" content="Aplicaciones del FH1 en mantenimiento eléctrico, infraestructuras críticas y entornos industriales." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <a class="brand" href="index.htm">
+          <img src="assets/logo.png" alt="Logo FLYHIGH" />
+          <span>FLYHIGH</span>
+        </a>
+
+        <nav class="menu">
+          <a href="fh1.html">El dron FH1</a>
+          <a href="tecnologia.html">Tecnología y módulos</a>
+          <a href="aplicaciones.html">Aplicaciones</a>
+          <a href="empresa.html">Empresa</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <a class="btn mobile-toggle" id="mobileToggle" href="#">Menú</a>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="fh1.html">El dron FH1</a>
+        <a href="tecnologia.html">Tecnología y módulos</a>
+        <a href="aplicaciones.html">Aplicaciones</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <span class="badge reveal">B2B · Infraestructuras</span>
+      <h1 class="h h1 reveal">Aplicaciones industriales</h1>
+      <p class="p reveal" style="max-width:90ch;">
+        El FH1 está orientado a entornos donde la intervención humana implica riesgo elevado. Su modularidad permite adaptar la misión y reducir tiempos de intervención.
+      </p>
+
+      <div class="grid grid-3" style="margin-top:18px;">
+        <div class="card feature reveal">
+          <h3 class="h">Líneas eléctricas</h3>
+          <p>Apoyo a operaciones en alta tensión con enfoque de seguridad y intervención remota.</p>
+        </div>
+        <div class="card feature reveal">
+          <h3 class="h">Infraestructura industrial</h3>
+          <p>Inspección y actuaciones puntuales en zonas de acceso complejo o riesgo operativo.</p>
+        </div>
+        <div class="card feature reveal">
+          <h3 class="h">Prevención y respuesta</h3>
+          <p>Actuación ante incidencias y apoyo a seguridad operativa mediante módulos específicos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <h2 class="h h2 reveal">Modelo de servicio</h2>
+      <div class="grid grid-2" style="margin-top:14px;">
+        <div class="card feature reveal">
+          <h3 class="h">Venta directa y exclusiva</h3>
+          <p>Contacto online y cita en instalaciones para demostrar el proceso de fabricación y el sistema en funcionamiento.</p>
+        </div>
+        <div class="card feature reveal">
+          <h3 class="h">Política de cobro</h3>
+          <p>Señal en el pedido y pago restante a la entrega, asegurando liquidez y reduciendo riesgo de fabricación.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="assets/logo.png" alt="Logo FLYHIGH" style="width:30px; height:30px;" />
+        <div>
+          <div style="font-weight:800;">FLYHIGH</div>
+          <div class="small">Tecnología aérea aplicada a alta tensión</div>
+        </div>
+      </div>
+      <div class="small">© <span id="year"></span> FLYHIGH</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>

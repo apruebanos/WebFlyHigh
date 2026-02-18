@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tecnología y módulos — FLYHIGH</title>
+  <meta name="description" content="Módulos intercambiables del FH1: reparación, extinción e inspección. Tecnología orientada a seguridad industrial." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <a class="brand" href="index.htm">
+          <img src="assets/logo.png" alt="Logo FLYHIGH" />
+          <span>FLYHIGH</span>
+        </a>
+
+        <nav class="menu">
+          <a href="fh1.html">El dron FH1</a>
+          <a href="tecnologia.html">Tecnología y módulos</a>
+          <a href="aplicaciones.html">Aplicaciones</a>
+          <a href="empresa.html">Empresa</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <a class="btn mobile-toggle" id="mobileToggle" href="#">Menú</a>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="fh1.html">El dron FH1</a>
+        <a href="tecnologia.html">Tecnología y módulos</a>
+        <a href="aplicaciones.html">Aplicaciones</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <span class="badge reveal">Tecnología · Seguridad</span>
+      <h1 class="h h1 reveal">Tecnología y módulos</h1>
+      <p class="p reveal" style="max-width:90ch;">
+        El FH1 está diseñado como plataforma modular. El mismo dron puede equiparse con distintos módulos y herramientas, reduciendo costes de adquisición
+        y aumentando la flexibilidad operativa.
+      </p>
+
+      <div class="grid grid-3" style="margin-top:18px;">
+        <div class="card feature reveal">
+          <h3 class="h">Módulo de reparación</h3>
+          <p>Herramientas para tareas técnicas como soldadura o manipulación controlada en intervenciones específicas.</p>
+        </div>
+        <div class="card feature reveal">
+          <h3 class="h">Módulo de extinción</h3>
+          <p>Sistema de aplicación de CO₂ orientado a respuesta rápida ante incidencias en el entorno de infraestructura.</p>
+        </div>
+        <div class="card feature reveal">
+          <h3 class="h">Módulo de inspección</h3>
+          <p>Captura y diagnóstico visual para evaluación previa y seguimiento de puntos críticos en instalaciones.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <h2 class="h h2 reveal">Diseño orientado a seguridad</h2>
+      <div class="grid grid-2" style="margin-top:14px;">
+        <div class="card feature reveal">
+          <h3 class="h">Operación remota</h3>
+          <p>El técnico opera desde el suelo, reduciendo exposición directa en zonas de riesgo.</p>
+        </div>
+        <div class="card feature reveal">
+          <h3 class="h">Proceso controlado</h3>
+          <p>Demostración, configuración y soporte bajo un modelo de venta directa y seguimiento técnico.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="assets/logo.png" alt="Logo FLYHIGH" style="width:30px; height:30px;" />
+        <div>
+          <div style="font-weight:800;">FLYHIGH</div>
+          <div class="small">Tecnología aérea aplicada a alta tensión</div>
+        </div>
+      </div>
+      <div class="small">© <span id="year"></span> FLYHIGH</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>

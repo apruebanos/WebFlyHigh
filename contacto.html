@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto — FLYHIGH</title>
+  <meta name="description" content="Contacto FLYHIGH. Solicita una demostración del FH1." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <a class="brand" href="index.htm">
+          <img src="assets/logo.png" alt="Logo FLYHIGH" />
+          <span>FLYHIGH</span>
+        </a>
+
+        <nav class="menu">
+          <a href="fh1.html">El dron FH1</a>
+          <a href="tecnologia.html">Tecnología y módulos</a>
+          <a href="aplicaciones.html">Aplicaciones</a>
+          <a href="empresa.html">Empresa</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <a class="btn mobile-toggle" id="mobileToggle" href="#">Menú</a>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="fh1.html">El dron FH1</a>
+        <a href="tecnologia.html">Tecnología y módulos</a>
+        <a href="aplicaciones.html">Aplicaciones</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <span class="badge reveal">Contacto · Demostraciones</span>
+      <h1 class="h h1 reveal">Solicitar demostración</h1>
+      <p class="p reveal" style="max-width:85ch;">
+        Completa el formulario para solicitar una demostración del FH1. Este formulario es visual (para el trabajo) y no envía datos.
+      </p>
+
+      <div class="grid grid-2" style="margin-top:18px;">
+        <div class="card reveal" style="padding:18px;">
+          <form id="demoForm" style="display:flex; flex-direction:column; gap:10px;">
+            <label class="small">Nombre y apellidos</label>
+            <input required style="padding:12px; border-radius:14px; border:1px solid var(--line);" placeholder="Tu nombre" />
+
+            <label class="small">Empresa</label>
+            <input required style="padding:12px; border-radius:14px; border:1px solid var(--line);" placeholder="Nombre de la empresa" />
+
+            <label class="small">Email</label>
+            <input required type="email" style="padding:12px; border-radius:14px; border:1px solid var(--line);" placeholder="correo@empresa.com" />
+
+            <label class="small">Interés principal</label>
+            <select required style="padding:12px; border-radius:14px; border:1px solid var(--line);">
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option>Reparación en alta tensión</option>
+              <option>Extinción / respuesta a incidencias</option>
+              <option>Inspección / diagnóstico</option>
+              <option>Información general</option>
+            </select>
+
+            <label class="small">Mensaje</label>
+            <textarea style="padding:12px; border-radius:14px; border:1px solid var(--line); min-height:120px;" placeholder="Describe tu caso de uso."></textarea>
+
+            <button class="btn primary" type="submit">Enviar solicitud</button>
+            <div class="small" id="msg" style="margin-top:4px;"></div>
+          </form>
+        </div>
+
+        <div class="card reveal" style="padding:18px;">
+          <h2 class="h h2" style="margin-top:0;">Proceso</h2>
+          <ul style="margin:0; padding-left:18px; color:var(--muted);">
+            <li>Contacto inicial vía web</li>
+            <li>Confirmación y cita</li>
+            <li>Visita a instalaciones y demostración</li>
+            <li>Configuración de módulos</li>
+          </ul>
+
+          <div class="card" style="padding:16px; margin-top:14px;">
+            <div class="small">Ubicación</div>
+            <div style="font-weight:700; margin-top:6px;">Polígono El Oliveral, Riba-roja del Turia (Valencia)</div>
+            <div class="small">Atención bajo cita previa.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="assets/logo.png" alt="Logo FLYHIGH" style="width:30px; height:30px;" />
+        <div>
+          <div style="font-weight:800;">FLYHIGH</div>
+          <div class="small">Tecnología aérea aplicada a alta tensión</div>
+        </div>
+      </div>
+      <div class="small">© <span id="year"></span> FLYHIGH</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("demoForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      document.getElementById("msg").textContent = "Solicitud registrada (demo). En una web real se enviaría al equipo comercial.";
+      e.target.reset();
+    });
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

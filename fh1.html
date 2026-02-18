@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>El dron FH1 — FLYHIGH</title>
+  <meta name="description" content="FH1: dron industrial modular para mantenimiento en alta tensión. Pack base 30.000 € + IVA con un módulo a elegir." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <a class="brand" href="index.htm">
+          <img src="assets/logo.png" alt="Logo FLYHIGH" />
+          <span>FLYHIGH</span>
+        </a>
+
+        <nav class="menu" aria-label="Navegación principal">
+          <a href="fh1.html">El dron FH1</a>
+          <a href="tecnologia.html">Tecnología y módulos</a>
+          <a href="aplicaciones.html">Aplicaciones</a>
+          <a href="empresa.html">Empresa</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <a class="btn mobile-toggle" id="mobileToggle" href="#">Menú</a>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu" aria-label="Menú móvil">
+        <a href="fh1.html">El dron FH1</a>
+        <a href="tecnologia.html">Tecnología y módulos</a>
+        <a href="aplicaciones.html">Aplicaciones</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <span class="badge reveal">Producto · Plataforma modular</span>
+      <h1 class="h h1 reveal">FH1</h1>
+      <p class="p reveal" style="max-width:85ch;">
+        El FH1 es un dron industrial diseñado para operar en entornos eléctricos de alta tensión. Su arquitectura modular permite configurar la intervención
+        según la necesidad: reparación, extinción e inspección.
+      </p>
+
+      <div class="grid grid-2" style="margin-top:18px;">
+        <div class="card reveal" style="overflow:hidden;">
+          <img src="assets/fh1.jpeg" alt="FH1 en entorno industrial" />
+        </div>
+        <div class="card reveal" style="padding:18px;">
+          <h2 class="h h2" style="margin-top:0;">Pack base</h2>
+          <div class="kpi-row" style="margin-top:10px;">
+            <div class="kpi-box">
+              <b>30.000 €</b><span>Precio sin IVA</span>
+            </div>
+            <div class="kpi-box">
+              <b>+ 21% IVA</b><span>Precio al cliente: 36.300 €</span>
+            </div>
+            <div class="kpi-box">
+              <b>Dron + 1 módulo</b><span>Soldadura / extinción / otros</span>
+            </div>
+            <div class="kpi-box">
+              <b>Soporte</b><span>Visita y demostración</span>
+            </div>
+          </div>
+
+          <div class="card" style="padding:16px; margin-top:14px;">
+            <div class="small">Incluye</div>
+            <ul style="margin:10px 0 0; padding-left:18px; color:var(--muted);">
+              <li>Plataforma FH1 lista para operación</li>
+              <li>Un módulo a elegir y herramienta asociada</li>
+              <li>Formación inicial de uso y seguridad</li>
+              <li>Servicio postventa (opcional)</li>
+            </ul>
+          </div>
+
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn primary" href="contacto.html">Solicitar demostración</a>
+            <a class="btn" href="tecnologia.html">Ver módulos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <h2 class="h h2 reveal">Propuesta de valor</h2>
+      <div class="grid grid-3" style="margin-top:14px;">
+        <div class="card feature reveal">
+          <h3 class="h">Seguridad</h3>
+          <p>Reduce la exposición directa del técnico en entornos de alto riesgo mediante intervención remota.</p>
+        </div>
+        <div class="card feature reveal">
+          <h3 class="h">Precisión</h3>
+          <p>Operación controlada con visión en tiempo real y herramientas especializadas por módulo.</p>
+        </div>
+        <div class="card feature reveal">
+          <h3 class="h">Escalabilidad</h3>
+          <p>Un solo sistema con módulos intercambiables para ampliar capacidades sin duplicar plataformas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="assets/logo.png" alt="Logo FLYHIGH" style="width:30px; height:30px;" />
+        <div>
+          <div style="font-weight:800;">FLYHIGH</div>
+          <div class="small">Tecnología aérea aplicada a alta tensión</div>
+        </div>
+      </div>
+      <div class="small">© <span id="year"></span> FLYHIGH</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>
