@@ -315,4 +315,20 @@ img{ max-width:100%; display:block; }
   background: linear-gradient(135deg, var(--primary-2), var(--accent));
   border-radius: 999px;
 }
+.btn-instagram{
+  display:inline-block;
+  margin-top:18px;
+  padding:12px 20px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:600;
+  color:white;
+  background: linear-gradient(45deg, #405DE6, #C13584, #E1306C);
+  transition: all .3s ease;
+}
+
+.btn-instagram:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
 
